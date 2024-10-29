@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Young Serif";
+    src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("truetype");
+    font-weight: 700;
+}
+
+:root{
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+    --Brown-800: hsl(14, 45%, 36%);
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{   
+    font-size: 16px;
+    background-color: var(--Stone-100);
+    display: grid;
+    place-content: center;
+    color: var(--Stone-600);
+    font-family: 'Outfit';
+    font-weight: 400;
+}
+
+#card{
+    text-align: left;
+    background-color: #fff;
+    margin-top: 6em;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.content-card{
+    margin-top: 2em;
+}
+
+.content-card h1{
+    font-family: "Young Serif";
+    color: var(--Stone-900);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+#preparation-time{
+    background-color: var(--Rose-50);
+    margin-top: 2rem;
+    margin-left: 50px;
+    line-height: 2;
+    padding: 20px;
+    margin-bottom: 1rem;
+}
+
+#preparation-time h3{
+    color: var(--Rose-800);
+}
+
+#preparation-time ul{
+    margin-left: 28px;
+    font-size: 14px;
+}
+
+#ingredients{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+.bold-instruction{
+    color: var(--Stone-600);
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.title{
+    font-family: "Young Serif";
+    color: var(--Brown-800);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.list{
+    margin-left: 25px;
+    list-style-position: inside;
+}
+
+#ingredients .list li{
+    line-height: 2;
+}
+
+.space{
+    margin-left: 10px;
+}
+
+#instructions{
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+#instructions ol{
+    margin-left: 25px;
+    list-style-position: inside;
+}
+
+#instructions li{
+    margin-bottom: 10px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+#instructions ol li::marker{
+    color: var(--Brown-800);
+    font-weight: bold;
+}
+
+#instructions .title{
+    margin-top: 1.5rem;
+}
+
+.instruction{
+    width: 100%;
+    color: var(--Stone-600);
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+#nutrition .title{
+    margin-top: 1.5rem;
+}
+
+table{
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 30px;
+}
+
+table tr{
+    border-bottom: 1px solid var(--Stone-150);
+}
+
+table tr:last-child{
+    border-bottom: none;
+}
+
+table td{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+table td:last-child{
+    color: var(--Brown-800);
+    font-weight: 600;;
+}
+
+@media (max-width:375px) {
+    #card{
+        margin-top: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    .content-card{
+        padding: 15px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    #preparation-time{
+        margin-left: 10px;
+    }
+
+    .list{
+        list-style-position: outside;
+    }
+
+    #instructions ol{
+        list-style-position: outside;
+    }
+}
